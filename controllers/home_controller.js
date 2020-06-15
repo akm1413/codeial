@@ -1,0 +1,9 @@
+//module.exports.actionName=funcn(req, res)
+
+module.exports.home = function(req, res){
+    //return res.end('<h1>Express is up for Codeial !!</h1>');
+    return res.render('home', {
+        title: "home"
+    });
+}//can u show me the error? w sa
+
