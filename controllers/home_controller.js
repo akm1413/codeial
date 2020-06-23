@@ -5,5 +5,5 @@ module.exports.home = function(req, res){
     return res.render('home', {
         title: "home"
     });
-}//can u show me the error? w sa
+}
 

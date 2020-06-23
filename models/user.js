@@ -12,7 +12,12 @@ const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
-    },
-    timestamps: true
+    }
+},
+    {
+        timestamps: true
 });
-//u have not complete it right?yeah..but i was getting the same error before it okay let me see
+
+const User = mongoose.model('User', userSchema); //wait
+
+module.exports = User;
