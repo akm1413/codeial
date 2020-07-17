@@ -20,10 +20,9 @@ module.exports.update = function(req, res){
     }
 }
 
+//making the sign-In and sign-up page available only when a user is signed out
 
 // render the sign up page
-
-//making the sign-In ans sign-up page available only when a user is signed out
 module.exports.signUp = function(req, res){
     if(req.isAuthenticated())
     {
@@ -33,7 +32,6 @@ module.exports.signUp = function(req, res){
         title: "Codeial | Sign Up"
     })
 }
-
 
 // render the sign in page
 module.exports.signIn = function(req, res){
