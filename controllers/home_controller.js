@@ -20,6 +20,7 @@ const User = require('../models/user');
         try{
              // populate the user of each post
             let posts = await Post.find({})
+            .sort('-createdAt') //sorting the posts in reverse chronological order i.e the latest post is at top
             .populate('user')
             .populate({
                 path: 'comments',
